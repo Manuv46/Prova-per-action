@@ -1,9 +1,0 @@
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.gz
-*.out
-*.toc
-*.pdf
-__latexindent_temp.tex
