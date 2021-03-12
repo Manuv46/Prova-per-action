@@ -13,5 +13,6 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-        name: PDF
-        path: ..\..\RR\Documenti Interni\Studio di Fattibilità\studioFattibilita2.pdf
+          name: PDF
+          path: ..\..\RR\Documenti Interni\Studio di Fattibilità\studioFattibilita2.pdf
+
