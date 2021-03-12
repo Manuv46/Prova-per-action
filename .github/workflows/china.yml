@@ -6,7 +6,6 @@ jobs:
     steps:
       - name: Prova-per-action
         uses: actions/checkout@v2
-        path: main
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
