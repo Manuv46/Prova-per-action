@@ -9,10 +9,9 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: |
-          RR\Documenti Interni\Studio di Fattibilità\studioFattibilita.tex
+          root_file: RR\Documenti Interni\Studio di Fattibilità\studioFattibilita.tex
 
       - uses: actions/upload-artifact@v2
         with:
-        name: PDF
-        path: RR\Documenti Interni\Studio di Fattibilità\studioFattibilita2.pdf
+          name: PDF
+          path: RR\Documenti Interni\Studio di Fattibilità\studioFattibilita2.pdf
