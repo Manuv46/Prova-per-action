@@ -8,10 +8,8 @@ jobs:
         uses: actions/checkout@v1
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          root_file: studioFattibilita.tex
-          
-      - uses: actions/upload-artifact@v2
-        with:
-            name: PDF
-            path: main.pdf
+          tex_path: 'studioFattibilita.tex'
+          push: 'yes'
