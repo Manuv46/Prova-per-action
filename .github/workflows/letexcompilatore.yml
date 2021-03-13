@@ -13,5 +13,5 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tex_path: '../../../**.tex'
+        tex_path: 'studioFattibilita.tex'
         push: 'yes'
