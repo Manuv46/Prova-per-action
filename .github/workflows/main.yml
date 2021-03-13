@@ -1,0 +1,16 @@
+name: orcodio
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+  -name: latex2pdf
+  # You may pin to the exact commit or the version.
+  # uses: thomas-chauvet/latex2pdf-action@9d5d68988dd384016bff36f2674ba33527cc631a
+  uses: thomas-chauvet/latex2pdf-action@1.0.1
+    with:
+    # Output directory to store the pdf file.
+     output_dir: master
+    # Main latex file to convert in PDF (for intance `cv.tex`).
+    main_latex_file: studioFattibilita.tex
+    # "Extra package from CTAN to install. List of packages available [here](http://mirror.ctan.org/systems/texlive/tlnet/archive).  Each package must be separated by a space (ex: "moderncv xargs")."
+    ctan_packages: # optional
